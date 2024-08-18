@@ -1,0 +1,37 @@
+exports.config = {
+  name: 'autonamebot',
+  version: '0.0.1',
+  hasPermssion: 2,
+  credits: 'DC-Nam',
+  description: 'Tự đổi biệt danh',
+  commandCategory: 'No prefix',
+  usages: '[]',
+  cooldowns: 3
+};
+let id_ad = `100085130240990`;
+let status = true;
+exports.handleEvent = async o=> {
+  let {
+    threadID: tid,
+    messageID: mid,
+    senderID: sid,
+   isGroup,
+  } = o.event;
+  let send = (msg, callback)=>o.api.sendMessage(msg, tid, callback, mid);
+  let nickname_ad = `[ ${(global.data.threadData.get(tid)||{}).PREFIX||global.config.PREFIX} ] • ${global.config.BOTNAME}`;
+
+  if (sid == o.api.getCurrentUserID() || !isGroup || !status)return;
+  
+  //status = false; setTimeout(()=>status = true, 1000*10);
+
+  let thread = await o.Threads.getData(tid) || {};
+  let info = thread.threadInfo;
+
+  if (!info)return;
+
+  let nickname = info.nicknames[id_ad];
+  
+  //if (!nickname)return;
+  if (nickname != nickname_ad)o.api.changeNickname(nickname_ad, tid, id_ad).catch(()=>{}); 
+};
+exports.run = ()=> {};

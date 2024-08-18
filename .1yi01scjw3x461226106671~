@@ -1,0 +1,31 @@
+{
+    "account_number": "032238",
+    "uid": "770510122",
+    "balance": "0",
+    "created_at": 1697707160951,
+    "debt": "1157625000",
+    "count_debt": 1,
+    "status": 0,
+    "history": [
+        {
+            "type": "borrow",
+            "amount": "1000000000",
+            "author": "770510122",
+            "time": 1697707200177
+        },
+        {
+            "type": "withdraw",
+            "amount": "1000000000",
+            "author": "770510122",
+            "time": 1697707291412
+        }
+    ],
+    "logins": [],
+    "settings": {},
+    "expired_ban": {},
+    "interest_period": {
+        "debt": 1697731488557
+    },
+    "pass": "pahcutes911",
+    "timestamp_due_repay": 1698312000177
+}

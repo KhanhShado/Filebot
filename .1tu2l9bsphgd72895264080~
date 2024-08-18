@@ -1,0 +1,70 @@
+const config = {
+  name: "key",
+  version: "1.1.7",
+  hasPermssion: 2,
+  credits: "BraSL",
+  description: "tạo,check,xóa key",
+  commandCategory: "Admin",
+  usages: "[]",
+  cooldowns: 3,
+};
+const axios = require('axios')
+const fs = require('fs')
+const run = async function({ event, api, args }) {
+  if(args[0] === 'create'){
+    const data = (await axios({
+      method: 'GET',
+      url: 'https://apikey.niio-zic.repl.co/api/key/create?name='+args[1],
+      data: {
+    admin: 'LeBaBach7710'
+  }
+    })).data
+    if(data.status){
+      api.sendMessage('Key: '+data.key,event.threadID)
+    }else api.sendMessage('⚠️ Lỗi khi tạo key!',event.threadID)
+  }else if(args[0] === 'check'){
+    const data = (await axios({
+      method: 'GET',
+      url: 'https://apikey.niio-zic.repl.co/api/key/check?name='+args[1] + '&key=' + args[2]
+    })).data
+    if(data.status){
+      api.sendMessage(data.message,event.threadID)
+    }else api.sendMessage('⚠️ Lỗi khi check key!',event.threadID)
+  }else if(args[0] === 'data'){
+        const data = (await axios({
+          method: 'GET',
+          url: 'https://apikey.niio-zic.repl.co/api/data',
+          data: {
+            admin: 'LeBaBach7710'
+          }
+        })).data
+    var msg = 'Danh sách các file (replit/name-file)',
+        list_app = [],
+        num = 1;
+    for(const i of data){
+      msg += `\n${num++}. ${i.name + '/' + i.file}`
+      list_app.push(i.appstate)
+    }
+    msg += '\n\nĐã lưu all appstate các file trên vào data/appstate.json'
+    fs.writeFileSync(__dirname + '/data/appstate.json', JSON.stringify(list_app, "utf8", 4))
+    return api.sendMessage(msg, event.threadID)
+  }else if(args[0] === 'remove'){
+    const data = (await axios({
+      method: 'GET',
+      url: 'https://apikey.niio-zic.repl.co/api/key/remove?key='+args[1],
+      data: {
+    admin: 'LeBaBach7710'
+  }
+    })).data
+    if(data.status){
+      api.sendMessage(data.message,event.threadID)
+    }else api.sendMessage('⚠️ Lỗi khi xóa key!',event.threadID)
+  }else{
+    api.sendMessage(`Bạn đã dùng sai cách\n${global.config.PREFIX}${this.config.name} create + tên replit\n${global.config.PREFIX}${this.config.name} check + tên replit + key\n${global.config.PREFIX}${this.config.name} remove + key\n${global.config.PREFIX}${this.config.name} data\nVí dụ: ${global.config.PREFIX}${this.config.name} check niiozic J2BKbM2g`,event.threadID)
+  }
+};
+
+module.exports = {
+  config,
+  run
+};

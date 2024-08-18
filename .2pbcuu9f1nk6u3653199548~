@@ -1,0 +1,25 @@
+{
+    "account_number": "051935",
+    "uid": "100055080610974",
+    "balance": "100000",
+    "created_at": 1697573268219,
+    "debt": "0",
+    "count_debt": 0,
+    "status": 0,
+    "history": [
+        {
+            "type": "receive",
+            "amount": "100000",
+            "content": "Lộc",
+            "time": 1697714189082,
+            "from": "270727"
+        }
+    ],
+    "logins": [],
+    "settings": {},
+    "expired_ban": {},
+    "interest_period": {
+        "balance": 1697803486732
+    },
+    "pass": "517"
+}

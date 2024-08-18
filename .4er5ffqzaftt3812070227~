@@ -1,0 +1,24 @@
+{
+    "account_number": "042620",
+    "uid": "100072700060518",
+    "balance": "20000",
+    "created_at": 1697719629317,
+    "debt": "0",
+    "count_debt": 0,
+    "status": 0,
+    "history": [
+        {
+            "type": "send",
+            "amount": "20000",
+            "author": "100072700060518",
+            "time": 1697721713854
+        }
+    ],
+    "logins": [],
+    "settings": {},
+    "expired_ban": {},
+    "interest_period": {
+        "balance": 1697808114689
+    },
+    "pass": "Vdaodz123"
+}

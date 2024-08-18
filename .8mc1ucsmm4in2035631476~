@@ -1,0 +1,86 @@
+{
+    "account_number": "875902",
+    "uid": "506980126",
+    "balance": "88197",
+    "created_at": 1697576465262,
+    "debt": "0",
+    "count_debt": 0,
+    "status": 0,
+    "history": [
+        {
+            "type": "borrow",
+            "amount": "2000000",
+            "author": "506980126",
+            "time": 1697577276089
+        },
+        {
+            "type": "withdraw",
+            "amount": "2000000",
+            "author": "506980126",
+            "time": 1697577338333
+        },
+        {
+            "type": "borrow",
+            "amount": "5000000",
+            "author": "506980126",
+            "time": 1697706792972
+        },
+        {
+            "type": "withdraw",
+            "amount": "5000000",
+            "author": "506980126",
+            "time": 1697706811434
+        },
+        {
+            "type": "withdraw",
+            "amount": "50000",
+            "author": "506980126",
+            "time": 1697728059691
+        },
+        {
+            "type": "send",
+            "amount": "1500000",
+            "author": "506980126",
+            "time": 1697728604330
+        },
+        {
+            "type": "send",
+            "amount": "14000000",
+            "author": "506980126",
+            "time": 1697728839281
+        },
+        {
+            "type": "repay",
+            "amount": "13811803",
+            "author": "506980126",
+            "time": 1697728872953
+        },
+        {
+            "type": "withdraw",
+            "amount": "1600000",
+            "author": "506980126",
+            "time": 1697729117307
+        },
+        {
+            "type": "send",
+            "amount": "1600000",
+            "author": "506980126",
+            "time": 1697729192851
+        },
+        {
+            "type": "withdraw",
+            "amount": "1600000",
+            "author": "506980126",
+            "time": 1697729260437
+        }
+    ],
+    "logins": [],
+    "settings": {},
+    "expired_ban": {},
+    "interest_period": {
+        "debt": 1697730346459,
+        "balance": 1697793193839
+    },
+    "pass": "130",
+    "timestamp_due_repay": 1698311592972
+}

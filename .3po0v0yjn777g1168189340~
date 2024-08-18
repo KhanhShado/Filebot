@@ -1,0 +1,50 @@
+{
+    "account_number": "103084",
+    "uid": "100053871047154",
+    "balance": "600000",
+    "created_at": 1697714102326,
+    "debt": "1000000",
+    "count_debt": 1,
+    "status": 0,
+    "history": [
+        {
+            "type": "borrow",
+            "amount": "1000000",
+            "author": "100053871047154",
+            "time": 1697728385716
+        },
+        {
+            "type": "withdraw",
+            "amount": "100000",
+            "author": "100053871047154",
+            "time": 1697728411628
+        },
+        {
+            "type": "withdraw",
+            "amount": "100000",
+            "author": "100053871047154",
+            "time": 1697728437151
+        },
+        {
+            "type": "withdraw",
+            "amount": "100000",
+            "author": "100053871047154",
+            "time": 1697728458164
+        },
+        {
+            "type": "withdraw",
+            "amount": "100000",
+            "author": "100053871047154",
+            "time": 1697728494594
+        }
+    ],
+    "logins": [],
+    "settings": {},
+    "expired_ban": {},
+    "interest_period": {
+        "balance": 1697814786392,
+        "debt": 1697731986392
+    },
+    "pass": "1907",
+    "timestamp_due_repay": 1698333185716
+}

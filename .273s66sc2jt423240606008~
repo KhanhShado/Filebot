@@ -1,0 +1,62 @@
+{
+    "account_number": "992371",
+    "uid": "100093349543573",
+    "balance": "0",
+    "created_at": 1697577485852,
+    "debt": "0",
+    "count_debt": 0,
+    "status": 0,
+    "history": [
+        {
+            "type": "borrow",
+            "amount": "2000000",
+            "author": "100093349543573",
+            "time": 1697577534079
+        },
+        {
+            "type": "withdraw",
+            "amount": "2000000",
+            "author": "100093349543573",
+            "time": 1697577562043
+        },
+        {
+            "type": "borrow",
+            "amount": "99999999",
+            "author": "100093349543573",
+            "time": 1697706993763
+        },
+        {
+            "type": "withdraw",
+            "amount": "100999998",
+            "author": "100093349543573",
+            "time": 1697707041785
+        },
+        {
+            "type": "send",
+            "amount": "142000000",
+            "author": "100093349543573",
+            "time": 1697728927787
+        },
+        {
+            "type": "repay",
+            "amount": "141120889",
+            "author": "100093349543573",
+            "time": 1697728934069
+        },
+        {
+            "type": "withdraw",
+            "amount": "879111",
+            "author": "100093349543573",
+            "time": 1697729001744
+        }
+    ],
+    "logins": [],
+    "settings": {},
+    "expired_ban": {},
+    "interest_period": {
+        "debt": 1697730346454,
+        "balance": 1697793393802
+    },
+    "pass": "28012009",
+    "timestamp_due_repay": 1698311793763
+}

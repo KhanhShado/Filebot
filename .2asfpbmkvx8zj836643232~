@@ -1,0 +1,48 @@
+{
+    "account_number": "207757",
+    "uid": "100073693883744",
+    "balance": "6000",
+    "created_at": 1697722145028,
+    "debt": "0",
+    "count_debt": 0,
+    "status": 0,
+    "history": [
+        {
+            "type": "send",
+            "amount": "20000",
+            "author": "100073693883744",
+            "time": 1697722185936
+        },
+        {
+            "type": "withdraw",
+            "amount": "10000",
+            "author": "100073693883744",
+            "time": 1697722282729
+        },
+        {
+            "type": "withdraw",
+            "amount": "1000",
+            "author": "100073693883744",
+            "time": 1697722373260
+        },
+        {
+            "type": "withdraw",
+            "amount": "9000",
+            "author": "100073693883744",
+            "time": 1697722383619
+        },
+        {
+            "type": "send",
+            "amount": "6000",
+            "author": "100073693883744",
+            "time": 1697722731941
+        }
+    ],
+    "logins": [],
+    "settings": {},
+    "expired_ban": {},
+    "interest_period": {
+        "balance": 1697808586006
+    },
+    "pass": "tvh@2009"
+}

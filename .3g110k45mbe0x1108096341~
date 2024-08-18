@@ -1,0 +1,62 @@
+{
+    "account_number": "99999999",
+    "uid": "100012084348372",
+    "balance": "10100000",
+    "created_at": 1697455468973,
+    "debt": "0",
+    "count_debt": 0,
+    "status": 0,
+    "history": [
+        {
+            "type": "send",
+            "amount": "12345678910",
+            "author": "100012084348372",
+            "time": 1697455630410
+        },
+        {
+            "type": "send",
+            "amount": "1000000000000000",
+            "author": "100012084348372",
+            "time": 1697459879457
+        },
+        {
+            "type": "send",
+            "amount": "10000000000000",
+            "author": "100012084348372",
+            "time": 1697566412009
+        },
+        {
+            "type": "withdraw",
+            "amount": "100000000000000",
+            "author": "100012084348372",
+            "time": 1697566465027
+        },
+        {
+            "type": "withdraw",
+            "amount": "10000000000000",
+            "author": "100012084348372",
+            "time": 1697675695728
+        },
+        {
+            "type": "withdraw",
+            "amount": "743662200999916",
+            "author": "100012084348372",
+            "time": 1697708661496
+        },
+        {
+            "type": "send",
+            "amount": "10000000",
+            "author": "100012084348372",
+            "time": 1697728761221
+        }
+    ],
+    "logins": [],
+    "settings": {
+        "public": true
+    },
+    "expired_ban": {},
+    "interest_period": {
+        "balance": 1697815162110
+    },
+    "pass": "123456"
+}

@@ -1,0 +1,17 @@
+{
+    "account_number": "372354",
+    "uid": "100047874375055",
+    "balance": "0",
+    "created_at": 1697722252216,
+    "debt": "0",
+    "count_debt": 0,
+    "status": 0,
+    "history": [],
+    "logins": [],
+    "settings": {
+        "public": true
+    },
+    "expired_ban": {},
+    "interest_period": {},
+    "pass": "320"
+}

@@ -1,0 +1,15 @@
+{
+    "account_number": "79686868868668",
+    "uid": "100025774416174",
+    "balance": "0",
+    "created_at": 1697455751308,
+    "debt": "0",
+    "count_debt": 0,
+    "status": 0,
+    "history": [],
+    "logins": [],
+    "settings": {},
+    "expired_ban": {},
+    "interest_period": {},
+    "pass": "77777"
+}
